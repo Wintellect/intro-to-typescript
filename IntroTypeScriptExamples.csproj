@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{052F4E33-EF3B-40DF-8E4A-58BDDD9BA5AC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.css" />
+    <Content Include="index.html" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="basic-interface.ts" />
+    <TypeScriptCompile Include="classes-javascript-properties.ts" />
+    <TypeScriptCompile Include="classes-parameter-properties.ts" />
+    <TypeScriptCompile Include="classes-private-members.ts" />
+    <TypeScriptCompile Include="classes-typescript-properties.ts" />
+    <TypeScriptCompile Include="functions-default-parameters.ts" />
+    <TypeScriptCompile Include="functions-function-types.ts" />
+    <TypeScriptCompile Include="functions-generics.ts" />
+    <TypeScriptCompile Include="functions-javascript-rest-parameters.ts" />
+    <TypeScriptCompile Include="functions-javascript-this-pointer.ts" />
+    <TypeScriptCompile Include="functions-lambda-expressions.ts" />
+    <TypeScriptCompile Include="functions-optional-parameters.ts" />
+    <TypeScriptCompile Include="functions-parameter-and-return-types.ts" />
+    <TypeScriptCompile Include="functions-rest-parameters.ts" />
+    <TypeScriptCompile Include="javascript-classical-inheritance.ts" />
+    <TypeScriptCompile Include="duck-typing.ts" />
+    <TypeScriptCompile Include="es6-features-snippet.ts" />
+    <TypeScriptCompile Include="interface-function-types.ts" />
+    <TypeScriptCompile Include="interfaces-array-types.ts" />
+    <TypeScriptCompile Include="interfaces-extending.ts" />
+    <TypeScriptCompile Include="modules-basic-module.ts" />
+    <TypeScriptCompile Include="modules-exporting.ts" />
+    <TypeScriptCompile Include="modules-extending.ts" />
+    <TypeScriptCompile Include="modules-multiple-files-app.ts" />
+    <TypeScriptCompile Include="modules-multiple-files-utils.ts" />
+    <TypeScriptCompile Include="modules-naming-collision.ts" />
+    <TypeScriptCompile Include="sample.ts" />
+    <TypeScriptCompile Include="simple-type-snippet.ts" />
+    <TypeScriptCompile Include="type-alias.ts" />
+    <TypeScriptCompile Include="type-annotations-with-functions.ts" />
+    <TypeScriptCompile Include="typescript-classical-inheritance.ts" />
+    <TypeScriptCompile Include="union-types.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="generated\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>IntroTypeScriptExamples</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39609</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:39609/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
